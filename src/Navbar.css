@@ -1,0 +1,99 @@
+  
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background: #e0ebee;
+    color: #1d3229;
+}
+.Navbar{
+    height: 90px;
+    font-size: 50px;
+    font-family: "Trebuchet MS";
+    text-align: left;
+    padding: 3px;
+    color: #ffffff;
+    background: #00A876;
+    transition-duration: 0.4s;
+}
+.Navbar r{
+    float: right;
+    font-size: 50px;
+    text-align: right;
+    padding: 20px;
+    transition-duration: 0.4s;
+}
+.Navbar logo{
+    font-size: 50px;
+    font-family: "Trebuchet MS";
+    text-align: left;
+    padding: 30px;
+    color: #ffffff;
+    background: #00A876;
+    float: left;
+    transition-duration: 0.4s;
+}
+.Navbar logo:hover{
+    font-size: 65px;
+}
+@keyframes aniNavbar1 {
+    0%   {left:0%; top:0%;}
+    100%  {left: -35%; top:0%;}
+}
+@keyframes aniNavbar2 {
+    0%   {left:-35%; top:0%;}
+    100%  {left:0%; top:0%;}
+}
+@keyframes aniMenu1 {
+    0%   {left: 100%; top:10%;}
+    100%  {left: 75%; top:10%;}
+}
+@keyframes aniMenu2 {
+    0%  {left:75%; top:10%;}
+    100%  {left: 100%; top:10%;}
+}
+animationIsMove{
+    position: relative;
+    animation: aniNavbar1 200ms;
+    animation-delay: 100ms;
+    animation-fill-mode: forwards;
+}
+animationIsNotMove{
+    position: relative;
+    animation: aniNavbar2 100ms;
+    animation-fill-mode: forwards;
+}
+animationMenuBoxMove{
+    position: relative;
+    animation: aniMenu1 100ms;
+    animation-fill-mode: forwards;
+}
+animationMenuBoxNotMove{
+    position: relative;
+    animation: aniMenu2 100ms;
+    animation-fill-mode: forwards;
+}
+.button{
+    background-color: #00CC90;
+    border: none;
+    color: white;
+    padding: 5px 5px;
+    font-size: 15px;
+    font-family: "Trebuchet MS";
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+.button:hover{
+    background-color: #ffffff;
+    border: none;
+    color: #00CC90;
+    padding: 5px 5px;
+    font-size: 20px;
+    font-family: "Trebuchet MS";
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
